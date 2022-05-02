@@ -7,7 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <title>Vue Js - Hello</title>
 </head>
 <body>
  
@@ -23,8 +23,18 @@
 
       <div id="app">
 
-        <h1>{{messaggio}}</h1>
+        <h1 class="mb-4">{{messaggioUno}}</h1>
 
+        <input v-model="messaggioDue"  type="text" placeholder="inserisci cio che vuoi">
+        <h2>{{messaggioDue}}</h2>
+
+        <h1 v-bind:class="messaggioVerde"  type="text">
+        Questa scritta si colora di verde</h1>
+
+        <h3 v-bind:class="messaggioArancia"  type="text">Questa scritta si colora di arancione</h3>
+
+        <img :src="immagineBonus" width="800px">
+        
       </div>
 
     </div>
