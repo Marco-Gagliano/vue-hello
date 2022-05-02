@@ -21,7 +21,7 @@ const app = new Vue({
     messaggioDue: '',
     messaggioVerde: 'verde',
     messaggioArancia: 'arancione',
-    immagineBonus: 'img/mustang.jpg'
+    immagineBonus: 'img/mustang.jpg',
     
   }
   // tutte le varibiali che verrano inserite devono essere dichiarate in "DATA"
